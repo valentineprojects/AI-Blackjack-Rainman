@@ -1,7 +1,25 @@
 # AI-Blackjack-Rainman
  
-1. Table visuals
-2. Implement Rules + Deck
-3. Card counting Algo
-4. AI to count card and bet automatically
-5. Progress tracking me vs AI
+functions:
+
+[]Build Deck (6 decks 52cards) // select how many decks
+[]Shuffle 
+[]Create Player + chips
+[]Create House
+[]Start Game
+[]Deal Hand
+[]Render Cards
+[]Render Chips
+[]Track win/loss + bet sizing
+[]Hit
+[]Stay
+[]Split
+[]Win/Loss
+
+// Card counting
+[]Count cards
+[]Render card count + chance 
+[]Calculate bet size
+
+//AI
+[]Automatic betting based on //Card counting
