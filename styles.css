@@ -1,0 +1,43 @@
+/* --------------------- */
+/*  Reseting everything */
+/* -------------------- */
+
+/* Box Sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+picture,
+figure {
+    margin: 0;
+}
+
+/* Make img easier to work with */
+img,
+picture{
+    max-width: 100%;
+    display: block;
+}
+
+/* Make forms easier */
+input,
+button,
+textarea,
+select{
+    font:inherit;
+}
+
+/* RESET OVER------------------------------- */
+
+/* Create CSS to show card and asign cards value based on the VALUE array */
