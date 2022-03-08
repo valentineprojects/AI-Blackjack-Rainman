@@ -85,3 +85,16 @@ elementArray.forEach((element) => {
 });
 
 
+// Invert binary tree
+const reverseNodes = (node) => {
+    if (node == null) {
+        return
+    }
+}
+reverseNodes(node.right);
+reverseNodes(node.left);
+
+let hold = node.left
+node.left = node.right
+node.right = hold
+
