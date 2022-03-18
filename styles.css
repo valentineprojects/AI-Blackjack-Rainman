@@ -1,43 +1,104 @@
-/* --------------------- */
-/*  Reseting everything */
-/* -------------------- */
-
-/* Box Sizing */
 *,
-*::before,
-*::after{
-    box-sizing: border-box;
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-/* Reset margins */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-picture,
-figure {
-    margin: 0;
+body {
+  margin: 0;
+  /* display: grid;
+  grid-template-columns: repeat(2, 4rem);
+  grid-template-rows: 7rem 2rem 7rem;
+  gap: 0.5rem;
+  cursor: pointer;
+  justify-content: center;
+  padding-top: 1rem; */
 }
 
-/* Make img easier to work with */
-img,
-picture{
-    max-width: 100%;
-    display: block;
+@font-face {
+  font-family: sans-serif;
+  src: url();
 }
 
-/* Make forms easier */
-input,
-button,
-textarea,
-select{
-    font:inherit;
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-/* RESET OVER------------------------------- */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
 
-/* Create CSS to show card and asign cards value based on the VALUE array */
+.card {
+  position: relative;
+  height: 315px;
+  width: 225px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+}
+
+.card.red {
+  color: red;
+}
+
+.card.black {
+  color: black;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  content: attr(data-value);
+
+  font-size: 2rem;
+}
+
+.card::before {
+  top: 0.5rem;
+  left: 1rem;
+}
+
+.card::after {
+  bottom: 0.5rem;
+  right: 1rem;
+  transform: rotate(180deg);
+}
+
+/* // Not needed */
+
+.deck {
+  height: 315px;
+  width: 225px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  color: white;
+  user-select: none;
+}
+.computer-deck {
+  background-color: green;
+}
+.player-deck {
+  background-color: blue;
+}
+.text {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts/blackjack.js"></script>
-    <script src="scripts/deck.js"></script> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BlackJack</title>
-</head>
-<body>
-    <div class="game">
-        <h1>BlackJack</h1>
 
-        <!-- Create Grid Layout for all items. Span for numbers to be inserted -->
-
-        <div class="dealer-cards cards">52</div>
-        <div class="player-cards cards">52</div>
-        <button class="btn-stand btn">Stand</button>
-        <button class="btn-hit btn">Hit</button>
-        <button class="btn-double-down btn">Double Down</button>
-        <button class="btn-split btn" hidden>Split</button>
-        
-
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <div class="flex-center">
+      <h1>BlackJack</h1>
     </div>
-    
-</body>
+    <div class="flex-container">
+      <div class="dealer-container">
+        <h2 class="flex-center">Dealer</h2>
+        <img src="./assets/back-red.png" alt="back of card" />
+        <div class="computer-card-slot card-slot"></div>
+        <!-- <div class="computer-deck deck"></div> -->
+      </div>
+      <div class="player-container">
+        <h2 class="flex-center">Player</h2>
+        <img src="./assets/back-red.png" alt="back of card" />
+        <div class="player-card-slot card-slot"></div>
+        <!-- <div class="player-deck deck"></div> -->
+      </div>
+    </div>
+    <div class="score-container flex-center">Scores</div>
+    <div class="flex-center btn-container">
+      <button class="btn">Double</button>
+      <button class="btn">Hit</button>
+      <button class="btn">Stand</button>
+    </div>
+    <div class="text"></div>
+  </body>
 </html>
