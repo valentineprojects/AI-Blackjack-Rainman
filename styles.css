@@ -79,8 +79,8 @@ body {
 /* // Not needed */
 
 .deck {
-  height: 315px;
-  width: 225px;
+  height: 314.99px;
+  width: 224.99px;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -90,7 +90,7 @@ body {
   color: white;
   user-select: none;
 }
-.computer-deck {
+.dealer-deck {
   background-color: green;
 }
 .player-deck {
@@ -101,4 +101,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.player-container {
+  height: 400px;
+}
+
+.dealer-container {
+  height: 400px;
 }
