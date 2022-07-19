@@ -1,7 +1,2 @@
-# AI-Blackjack-Rainman
+# Card deck 
  
-In progress...
-
-[x]Creating Deck of cards + shuffle
-[]Writing logic for BlackJack
-...
